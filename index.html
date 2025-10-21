@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/06f54254e3.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 <div id="header">
@@ -38,8 +40,8 @@
             </div>
             <div class="about-col-2">
                 <h1 class = "sub-title">About Me</h1>
-                <p>Hello, thank you for Visting my website, my name is Ivan Duenas. Im a current student at the amazing Washington State University in my senior year. 
-                    In my free time i love playing video games, hanging out with friends, or just sitting back and watching a good show,
+                <p>Welcome! I’m Ivan Duenas, a senior at Washington State University. I enjoy designing and building projects, collaborating with friends, and learning something new every day. 
+                    Outside of class, I’m usually gaming, exploring new tech, or relaxing with a good show. Thanks for visiting!
                 </p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
@@ -78,30 +80,93 @@
         <h1 class = "sub-title">My Skills</h1>
         <div class="Skills-list">
             <div>
+                <i class="fa-brands fa-html5"></i>
                 <h2>Put any projects here</h2>
                 <p>Add the discription of the project here</p>
                 <a href="#">learn more about the project</a>
             </div>
             <div>
+                <i class="fa-brands fa-react"></i>
                 <h2>Project 2 </h2>
                 <p>Add the discription of the project here</p>
                 <a href="#">learn more about the project</a>
             </div>
             <div>
+                <i class="fa-brands fa-java"></i>
                 <h2>Project </h2>
                 <p>Add the discription of the project here</p>
                 <a href="#">Learn more about the project</a>
             </div>
             <div>
+                <i class="fa-brands fa-python"></i>
                 <h2>Project 4 </h2>
                 <p>Add the discription of the project here</p>
                 <a href="#">Learn more</a>
             </div>
         </div>
     </div>
-
-
 </div>
+<!--Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Fraternity Website</h3>
+                    <p>
+                        I built a fraternity website that connects prospective members and alumni. Users can browse member profiles, read chapter news, RSVP to upcoming events,
+                         explore chapter history, and view awards earned by brothers.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3> E-commerce app</h3>
+                    <p>
+                        real multi-tenant e-commerce app where creators have their own storefronts, sell digital products, and get paid through Stripe Connect.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>WinForm Booking App</h3>
+                    <p>
+                        A booking app build using C# and Winforms as a designer. The app allows users to book flights, search for places to eat and book hotels. 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"">see more</a>
+    </div>
+</div>
+
+<!-------Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class ="sub-title">Contant Me</h1>
+                <p>Blakcieduenas@gmail.com</p>
+                <p>509-423-6241</p>
+                <div class="div social-icons">
+                    <a href=" "></a>
+                </div>
+            </div>
+            <div class="contact-left">
+              
+            
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
 
     var tablinks = document.getElementsByClassName("tab-links")
