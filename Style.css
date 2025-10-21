@@ -15,14 +15,19 @@ body{
 }
 
 #header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/CoverPhoto.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    height:100vh; position:relative;
+    background:
+      radial-gradient(1000px 600px at 15% 20%, rgba(0, 0, 0, 1), transparent 60%),
+      radial-gradient(900px 500px at 85% 15%, rgba(255, 0, 79,1), transparent 55%),
+      #000000;
+    background-attachment: scroll;
+  }
+  #header::before{
+    content:""; position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.15));
+  }
+  .header-text{ position:center; z-index:1; }
 
-}
 
 .container{
     padding: 15px 15px;
@@ -67,15 +72,15 @@ nav ul li a:hover::after{
 
 .header-text{
     margin-top: 20%;
-    font-size:30px;
-    color: forestgreen;
+    font-size:75px;
+    color: white;
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color:brown;
+    color: #ff004f;
 }
 
 /*------about me------*/
@@ -317,7 +322,7 @@ nav ul li a:hover::after{
 
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: hwb(341 0% 0%);
 }
 
 .contact-right form{
