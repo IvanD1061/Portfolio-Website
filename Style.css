@@ -195,7 +195,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .Skills-list div i{
-    font-size: 10px;
+    font-size: 35px;
     margin-bottom: 20px;
 }
 .Skills-list div:hover{
