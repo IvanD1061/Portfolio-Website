@@ -99,7 +99,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 80%;
-    height: 85%;
+    height: 100%;
     border-radius: 15px;
     margin-left: 10%;
 
@@ -195,7 +195,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .Skills-list div i{
-    font-size: 50px;
+    font-size: 10px;
     margin-bottom: 20px;
 }
 .Skills-list div:hover{
