@@ -1,278 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
     <meta charset="UTF-8">
-    <meta http-equiv="C-UA-Compatible" content ="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="Style.css">
-    <script src="https://kit.fontawesome.com/06f54254e3.js" crossorigin="anonymous"></script>
-    
+    <title>Ivan Duenas — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/06f54254e3.js" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src ="images/Logo.png" class = "logo">
-            <ul id = "sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#portfolio">On going Projects</a></li>
-                <li><a href="#contact">Content Me</a></li>
-                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p> Full Stack Developer</p>
-            <h1> Hello! My name is <span>Ivan Duenas</span> <br>An inspiring Software Engineer</h1>
-        </div>
-    </div>
-</div>
 
-<!------About me---->
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src ="images/GradPhoto.jpg">
-            </div>
-            <div class="about-col-2">
-                <h1 class = "sub-title">About Me</h1>
-                <p>Welcome! I’m Ivan Duenas, a senior at Washington State University. I enjoy designing and building projects, collaborating with friends, and learning something new every day. 
-                    Outside of class, I’m usually gaming, exploring new tech, or relaxing with a good show. Thanks for visiting!
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
-                    <p class="tab-links" onclick="opentab('Projects')"> Projects</p>
-                    <p class="tab-links" onclick="opentab('Education')"> Education</p>
-                </div>
-                <div class="tab-contents active-tab" id ="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Designing Websites</li>
-                        <li><span>App Development</span><br>Building Apps</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Projects">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Designing Websites</li>
-                        <li><span>App Development</span><br>Building Apps</li>
-                        <li><span> E-commerce app</span><br>E-commerce app that mimics a real E-commerce app that allows user to sell/purchase all through a secure third party service.</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="Education">
-                    <ul>
-                        <li><span>Washington State University</span><br>BS Computer science<br> Minor in Mathematics</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="#header" class="nav-logo">Ivan<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#header" data-num="01">Home</a></li>
+            <li><a href="#about" data-num="02">About</a></li>
+            <li><a href="#Skills" data-num="03">Skills</a></li>
+            <li><a href="#portfolio" data-num="04">Work</a></li>
+            <li><a href="#contact" data-num="05">Contact</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
 
-<!-----Skills----->
-<div id="Skills">
+    <!-- ── HERO ─────────────────────────────────────────────── -->
+    <div id="header">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-left fade-up">
+                    <p class="hero-tag">Full Stack Developer</p>
+                    <h1 class="hero-h1">
+                        Hello, I'm<br>
+                        <span class="name">Ivan Duenas</span>
+                    </h1>
+                    <p class="hero-sub">An aspiring Software Engineer studying Computer Science at Washington State
+                        University — building things I'm proud of, one line at a time.</p>
+                    <div class="hero-cta">
+                        <a href="#portfolio" class="btn-primary">View My Work</a>
+                        <a href="#contact" class="btn-ghost">Get In Touch</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-num">3<span>+</span></div>
+                            <div class="stat-label">Years Coding</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">6<span>+</span></div>
+                            <div class="stat-label">Projects Built</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">6<span></span></div>
+                            <div class="stat-label">Languages</div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="container">
-        <h1 class = "sub-title">My Skills</h1>
-        <div class="Skills-list">
-            <div>
-                <i class="fa-brands fa-html5"></i>
-                <h2>HTML/CSS</h2>
-                <p>Created a large Range of different website that have used both HTMl and CSS</p> 
-            </div>
-            <div>
-                <i class="fa-brands fa-react"></i>
-                <h2>React</h2>
-                <p>Add the discription of the project here</p>
-                <a href="#">learn more about the project</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-java"></i>
-                <h2>JavaScript</h2>
-                <p>Add the discription of the project here</p>
-                <a href="#">Learn more about the project</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-python"></i>
-                <h2>Python </h2>
-                <p>Add the discription of the project here</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-c"></i>
-                <h2>C++</h2>
-                <p>Add the discription of the project here</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-SQL"></i>
-                <h2>SQL </h2>
-                <p>Add the discription of the project here</p>
-                <a href="#">learn more about the project</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Portfolio-->
-<div id="portfolio">
-    <div class="container">
-        <h1 class = "sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png" >
-                <div class="layer">
-                    <h3>Fraternity Website</h3>
-                    <p>
-                        I built a fraternity website that connects prospective members and alumni. Users can browse member profiles, read chapter news, RSVP to upcoming events,
-                         explore chapter history, and view awards earned by brothers.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png" >
-                <div class="layer">
-                    <h3> E-commerce app</h3>
-                    <p>
-                        real multi-tenant e-commerce app where creators have their own storefronts, sell digital products, and get paid through Stripe Connect.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png" >
-                <div class="layer">
-                    <h3>WinForm Booking App</h3>
-                    <p>
-                        A booking app build using C# and Winforms as a designer. The app allows users to book flights, search for places to eat and book hotels. 
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png" >
-                <div class="layer">
-                    <h3>Panama Papers</h3>
-                    <p>
-                        A booking app build using C# and Winforms as a designer. The app allows users to book flights, search for places to eat and book hotels. 
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png" >
-                <div class="layer">
-                    <h3></h3>
-                    <p>
-                        A booking app build using C# and Winforms as a designer. The app allows users to book flights, search for places to eat and book hotels. 
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png" >
-                <div class="layer">
-                    <h3>WinForm Booking App</h3>
-                    <p>
-                        A booking app build using C# and Winforms as a designer. The app allows users to book flights, search for places to eat and book hotels. 
-                    </p>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                <div class="hero-right fade-up">
+                    <div class="photo-frame">
+                        <div class="photo-frame-inner">
+                            <img src="images/GradPhoto.jpg" alt="Ivan Duenas"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="photo-initials" style="display:none">ID</div>
+                        </div>
+                        <div class="photo-badge">WSU · CS Senior</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn"">see more</a>
-    </div>
-    
-</div>
 
-<!-------Contact-->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class ="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>Blakcieduenas@gmail.com</p>
-                <p><i class="fa-solid fa-phone-volume"></i>509-423-6241</p>
-                <div class="div social-icons">
-                    <a href="https://github.com/IvanD1061"><i class="fa-brands fa-github"></i></a>
-                    <a href=" "><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=" "><i class="fa-brands fa-instagram"></i></a>
-                    <a href=" "><i class="fa-brands fa-discord"></i></a>
-                </div>
-                <a href="images/Ivan Duenas Resume.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type = "text" name ="Name" placeholder="your name " required>
-                    <input type = "email" name = "Email" placeholder="your email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id = "msg"></span>
-            </div>
+        <div class="scroll-hint">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright @Ivan Made with GreatStack</p>
-    </div>
-</div>
 
-<script>
+    <!-- ── ABOUT ─────────────────────────────────────────────── -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img-wrap fade-up">
+                    <img src="images/GradPhoto.jpg" alt="Ivan Duenas" onerror="this.src=''; this.alt='Ivan Duenas'">
+                </div>
+                <div class="about-text fade-up">
+                    <p class="section-label">About Me</p>
+                    <h2 class="section-title">Who I am</h2>
+                    <p>Welcome! I'm Ivan Duenas, a senior at Washington State University. I enjoy designing and building
+                        projects, collaborating with friends, and learning something new every day. Outside of class,
+                        I'm usually gaming, exploring new tech, or relaxing with a good show.</p>
 
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
+                    <div class="tab-row">
+                        <button class="tab-btn active" data-tab="skills">Skills</button>
+                        <button class="tab-btn" data-tab="projects">Projects</button>
+                        <button class="tab-btn" data-tab="education">Education</button>
+                    </div>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+                    <div class="tab-panel active" id="skills-panel">
+                        <ul>
+                            <li><strong>UI / UX Design</strong>Designing intuitive web & app interfaces</li>
+                            <li><strong>Web Development</strong>Building responsive, modern websites</li>
+                            <li><strong>App Development</strong>Crafting full-stack applications from idea to deploy
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" id="projects-panel">
+                        <ul>
+                            <li><strong>Fraternity Website</strong>Member profiles, events, chapter news & alumni portal
+                            </li>
+                            <li><strong>E-Commerce App</strong>Multi-tenant storefront with Stripe Connect payments</li>
+                            <li><strong>WinForm Booking App</strong>C# / WinForms: flights, hotels & restaurants</li>
+                            <li><strong>Panama Papers Explorer</strong>Data visualization & analysis project</li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" id="education-panel">
+                        <ul>
+                            <li><strong>Washington State University</strong>B.S. Computer Science · Minor in Mathematics
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    }
+    <!-- ── SKILLS ─────────────────────────────────────────────── -->
+    <section id="Skills">
+        <div class="container">
+            <p class="section-label fade-up">What I Know</p>
+            <h2 class="section-title fade-up">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card fade-up">
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML / CSS</h2>
+                    <p>Created a large range of websites using semantic HTML5 and modern CSS techniques including Grid,
+                        Flexbox, and animations.</p>
+                    <span class="bg-num">01</span>
+                </div>
+                <div class="skill-card fade-up">
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React</h2>
+                    <p>Building dynamic, component-driven UIs with hooks, state management, and modern React patterns.
+                    </p>
+                    <a href="#">Learn more</a>
+                    <span class="bg-num">02</span>
+                </div>
+                <div class="skill-card fade-up">
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>Full-stack JS development — from vanilla DOM manipulation to Node.js APIs and async patterns.</p>
+                    <a href="#">Learn more</a>
+                    <span class="bg-num">03</span>
+                </div>
+                <div class="skill-card fade-up">
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Data processing, scripting, automation, and backend development with Flask and Django.</p>
+                    <a href="#">Learn more</a>
+                    <span class="bg-num">04</span>
+                </div>
+                <div class="skill-card fade-up">
+                    <i class="fa-solid fa-c"></i>
+                    <h2>C++</h2>
+                    <p>Systems programming, data structures & algorithms, and desktop application development.</p>
+                    <a href="#">Learn more</a>
+                    <span class="bg-num">05</span>
+                </div>
+                <div class="skill-card fade-up">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p>Relational database design, complex queries, joins, and integrating databases into full-stack
+                        projects.</p>
+                    <a href="#">Learn more</a>
+                    <span class="bg-num">06</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</script>
+    <!-- ── PORTFOLIO ──────────────────────────────────────────── -->
+    <section id="portfolio">
+        <div class="container">
+            <p class="section-label fade-up">Selected Work</p>
+            <h2 class="section-title fade-up">My Projects</h2>
+            <div class="portfolio-grid">
+                <div class="work-card featured fade-up">
+                    <img src="images/work-1.png" alt="Fraternity Website">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">Web Development</span>
+                        <h3>Fraternity Website</h3>
+                        <p>Connects prospective members and alumni. Browse profiles, read chapter news, RSVP to events,
+                            explore history, and view awards earned by brothers.</p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="work-card fade-up">
+                    <img src="images/work-2.png" alt="E-Commerce App">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">Full Stack</span>
+                        <h3>E-Commerce App</h3>
+                        <p>Multi-tenant storefronts, digital product sales, and Stripe Connect payments for creators.
+                        </p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="work-card fade-up">
+                    <img src="images/work-3.png" alt="WinForm Booking App">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">C# / WinForms</span>
+                        <h3>Booking App</h3>
+                        <p>Desktop app for booking flights, hotels, and restaurants using C# and WinForms.</p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="work-card fade-up">
+                    <img src="images/work-3.png" alt="Panama Papers">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">Data / Analysis</span>
+                        <h3>Panama Papers</h3>
+                        <p>Data exploration and visualization on the Panama Papers dataset.</p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script>
-    var sidemenu = document.getElementById("sidemenu");
+    <!-- ── CONTACT ────────────────────────────────────────────── -->
+    <section id="contact">
+        <div class="container">
+            <p class="section-label fade-up">Let's Talk</p>
+            <h2 class="section-title fade-up">Contact Me</h2>
+            <div class="contact-grid">
+                <div class="contact-info fade-up">
+                    <h3>Get in touch</h3>
+                    <a class="contact-item" href="mailto:Blakcieduenas@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> Blakcieduenas@gmail.com
+                    </a>
+                    <a class="contact-item" href="tel:5094236241">
+                        <i class="fa-solid fa-phone"></i> 509-423-6241
+                    </a>
+                    <div class="socials">
+                        <a href="https://github.com/IvanD1061" class="social-link" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <br><br>
+                    <a href="images/Ivan Duenas Resume.pdf" download class="btn-primary"
+                        style="display:inline-block;font-family:var(--font-mono);font-size:13px;padding:14px 32px;border-radius:4px;text-decoration:none;letter-spacing:.05em;">Download
+                        CV</a>
+                </div>
+                <div class="contact-form fade-up">
+                    <form name="submit-to-google-sheet">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="Name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="Email" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="6" placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message →</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
+    <!-- ── FOOTER ─────────────────────────────────────────────── -->
+    <footer>
+        <p>© 2025 <a href="#">Ivan Duenas</a>. All rights reserved.</p>
+        <p style="font-size:12px;color:var(--muted);">Built with HTML · CSS · JavaScript</p>
+    </footer>
 
+    <!-- ── SCRIPTS ────────────────────────────────────────────── -->
+    <script>
+        // Cursor glow
+        const glow = document.getElementById('cursorGlow');
+        document.addEventListener('mousemove', e => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+        });
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwAbGOJPTvE789ZD6i4C6UEPM_LYmi54-63mqGGBOh0hlZ1bVeQA7kn3b7ehSnQP0C-/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent Successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },2000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-    
+        // Nav hamburger
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+        // Nav shrink on scroll
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').style.padding = window.scrollY > 60 ? '12px 40px' : '20px 40px';
+        });
+
+        // Tabs
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab + '-panel').classList.add('active');
+            });
+        });
+
+        // Fade-up on scroll
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Contact form
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwAbGOJPTvE789ZD6i4C6UEPM_LYmi54-63mqGGBOh0hlZ1bVeQA7kn3b7ehSnQP0C-/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('msg');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(() => { msg.innerHTML = 'Message sent successfully ✓'; setTimeout(() => msg.innerHTML = '', 3000); form.reset(); })
+                .catch(err => console.error('Error:', err));
+        });
+    </script>
 </body>
+
 </html>
