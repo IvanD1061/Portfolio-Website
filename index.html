@@ -9,14 +9,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/06f54254e3.js" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/06f54254e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <!-- Cursor glow -->
     <div class="cursor-glow" id="cursorGlow"></div>
 
     <!-- NAV -->
@@ -25,41 +23,45 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="#header" data-num="01">Home</a></li>
             <li><a href="#about" data-num="02">About</a></li>
-            <li><a href="#Skills" data-num="03">Skills</a></li>
-            <li><a href="#portfolio" data-num="04">Work</a></li>
-            <li><a href="#contact" data-num="05">Contact</a></li>
+            <li><a href="#experience" data-num="03">Experience</a></li>
+            <li><a href="#Skills" data-num="04">Skills</a></li>
+            <li><a href="#portfolio" data-num="05">Projects</a></li>
+            <li><a href="#contact" data-num="06">Contact</a></li>
         </ul>
         <button class="nav-hamburger" id="hamburger" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
     </nav>
 
-    <!-- ── HERO ─────────────────────────────────────────────── -->
+    <!-- HERO -->
     <div id="header">
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-left fade-up">
-                    <p class="hero-tag">Full Stack Developer</p>
+                    <p class="hero-tag">Software Engineer · Open to Work</p>
                     <h1 class="hero-h1">
                         Hello, I'm<br>
                         <span class="name">Ivan Duenas</span>
                     </h1>
-                    <p class="hero-sub">An aspiring Software Engineer studying Computer Science at Washington State
-                        University — building things I'm proud of, one line at a time.</p>
+                    <p class="hero-sub">Software Engineer with a foundation in systems programming, full-stack web
+                        development, and mobile engineering. From OS-level C
+                        programs to live production web apps. Computer Science graduate from Washington State
+                        University, actively
+                        seeking full-time roles.</p>
                     <div class="hero-cta">
-                        <a href="#portfolio" class="btn-primary">View My Work</a>
+                        <a href="#portfolio" class="btn-primary">View My Projects</a>
                         <a href="#contact" class="btn-ghost">Get In Touch</a>
                     </div>
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <div class="stat-num">3<span>+</span></div>
-                            <div class="stat-label">Years Coding</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-num">6<span>+</span></div>
+                            <div class="stat-num">7<span>+</span></div>
                             <div class="stat-label">Projects Built</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-num">6<span></span></div>
-                            <div class="stat-label">Languages</div>
+                            <div class="stat-num">50<span>+</span></div>
+                            <div class="stat-label">Live Users</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">10<span>+</span></div>
+                            <div class="stat-label">Technologies</div>
                         </div>
                     </div>
                 </div>
@@ -71,19 +73,18 @@
                                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
                             <div class="photo-initials" style="display:none">ID</div>
                         </div>
-                        <div class="photo-badge">WSU · CS Senior</div>
+                        <div class="photo-badge">WSU · CS Graduate</div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="scroll-hint">
             <div class="scroll-line"></div>
             <span>Scroll</span>
         </div>
     </div>
 
-    <!-- ── ABOUT ─────────────────────────────────────────────── -->
+    <!-- ABOUT -->
     <section id="about">
         <div class="container">
             <div class="about-grid">
@@ -93,9 +94,12 @@
                 <div class="about-text fade-up">
                     <p class="section-label">About Me</p>
                     <h2 class="section-title">Who I am</h2>
-                    <p>Welcome! I'm Ivan Duenas, a senior at Washington State University. I enjoy designing and building
-                        projects, collaborating with friends, and learning something new every day. Outside of class,
-                        I'm usually gaming, exploring new tech, or relaxing with a good show.</p>
+                    <p>Hey, I'm Ivan, a Software Engineer who works across the full spectrum of Computer Science. I've
+                        written low level C programs that simulate CPU schedulers and filesystems, shipped native iOS
+                        features to real users at a startup, and built a live e-commerce platform from scratch as a solo
+                        developer. I care about writing clean, well-engineered software — whether that's at the systems
+                        layer or in a React component. Outside of code, I love gaming, exploring new tech, playing golf,
+                        or winding down with a good movie</p>
 
                     <div class="tab-row">
                         <button class="tab-btn active" data-tab="skills">Skills</button>
@@ -105,25 +109,40 @@
 
                     <div class="tab-panel active" id="skills-panel">
                         <ul>
-                            <li><strong>UI / UX Design</strong>Designing intuitive web & app interfaces</li>
-                            <li><strong>Web Development</strong>Building responsive, modern websites</li>
-                            <li><strong>App Development</strong>Crafting full-stack applications from idea to deploy
-                            </li>
+                            <li><strong>Systems Programming</strong>C — cache simulators, CPU schedulers, Unix
+                                filesystem structures</li>
+                            <li><strong>Full Stack Development</strong>React, Next.js, Node.js, RESTful APIs, MongoDB,
+                                TypeScript</li>
+                            <li><strong>Mobile Engineering</strong>Native iOS development with Swift, shipped to
+                                production</li>
+                            <li><strong>Software Design</strong>OOP, design patterns, algorithms, data structures,
+                                system design</li>
+                            <li><strong>DevOps & Tooling</strong>Git, Docker, CI/CD, AWS, Jest, JWT, OAuth</li>
                         </ul>
                     </div>
                     <div class="tab-panel" id="projects-panel">
                         <ul>
-                            <li><strong>Fraternity Website</strong>Member profiles, events, chapter news & alumni portal
+                            <li><strong>TheMarketPlace</strong>Live multi-vendor e-commerce — Next.js, MongoDB, Stripe
+                                Connect</li>
+                            <li><strong>Roster (Captured Sun)</strong>iOS workforce management app — Swift, agile team
+                                of 5</li>
+                            <li><strong>Cache Simulator</strong>CPU cache hit/miss, eviction policies, memory hierarchy
+                                — C</li>
+                            <li><strong>CPU Scheduler</strong>FCFS, SJF & Round Robin scheduling with process queues — C
                             </li>
-                            <li><strong>E-Commerce App</strong>Multi-tenant storefront with Stripe Connect payments</li>
-                            <li><strong>WinForm Booking App</strong>C# / WinForms: flights, hotels & restaurants</li>
-                            <li><strong>Panama Papers Explorer</strong>Data visualization & analysis project</li>
+                            <li><strong>Unix Filesystem Tree</strong>Inode structures, directory traversal, path
+                                resolution — C</li>
+                            <li><strong>Travel Booking System</strong>Multi-service booking platform — C#, WinForms,
+                                React</li>
+                            <li><strong>Fraternity Website</strong>Member profiles, events, news & alumni portal</li>
                         </ul>
                     </div>
                     <div class="tab-panel" id="education-panel">
                         <ul>
-                            <li><strong>Washington State University</strong>B.S. Computer Science · Minor in Mathematics
-                            </li>
+                            <li><strong>Washington State University</strong>B.A. Computer Science · Minor in Mathematics
+                                · May 2026</li>
+                            <li><strong>Relevant Coursework</strong>Software Design I & II, Big Data, Web Development,
+                                Database Systems, OOP, Design & Analysis of Algorithms, Graph Theory</li>
                         </ul>
                     </div>
                 </div>
@@ -131,109 +150,189 @@
         </div>
     </section>
 
-    <!-- ── SKILLS ─────────────────────────────────────────────── -->
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="container">
+            <p class="section-label fade-up">Where I've Worked</p>
+            <h2 class="section-title fade-up">Experience</h2>
+            <div class="experience-list">
+                <div class="exp-card fade-up">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-role">Software Engineer Intern</h3>
+                            <p class="exp-company">Captured Sun <span>— Pullman, WA</span></p>
+                        </div>
+                        <span class="exp-date">Sep 2025 – Apr 2026</span>
+                    </div>
+                    <p class="exp-context">Early-stage startup building mobile workforce management tools for field
+                        teams.</p>
+                    <ul class="exp-bullets">
+                        <li>Owned end-to-end feature engineering across the full stack lifecycle of
+                            <strong>Roster</strong>, a mobile workforce management app, as part of a 5-engineer agile
+                            team — delivering across 3+ release cycles serving 50+ field users.
+                        </li>
+                        <li>Designed and implemented 4+ iOS features in <strong>Swift</strong>, improving roster
+                            management workflows and reducing average task completion time across the app.</li>
+                        <li>Engineered <strong>JavaScript test suites</strong> against database-layer operations,
+                            increasing code coverage by 20% and reducing regression defects across all 3 production
+                            deployments.</li>
+                        <li>Participated in sprint planning, architecture discussions, and code reviews — consistently
+                            shipping deliverables on schedule in a fast-paced, sprint-driven environment.</li>
+                        <li>Served as primary <strong>technical liaison</strong> between the engineering team and
+                            client, translating business requirements into well-scoped development tasks.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>Swift</span><span>JavaScript</span><span>Node.js</span><span>Jest</span><span>Agile /
+                            Scrum</span><span>Code Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
     <section id="Skills">
         <div class="container">
-            <p class="section-label fade-up">What I Know</p>
-            <h2 class="section-title fade-up">My Skills</h2>
+            <h2 class="section-title fade-up">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card fade-up">
-                    <i class="fa-brands fa-html5"></i>
-                    <h2>HTML / CSS</h2>
-                    <p>Created a large range of websites using semantic HTML5 and modern CSS techniques including Grid,
-                        Flexbox, and animations.</p>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Systems & C</h2>
+                    <p>Low-level programming in C — memory management, process scheduling, cache simulation, and Unix
+                        filesystem design.</p>
                     <span class="bg-num">01</span>
                 </div>
                 <div class="skill-card fade-up">
-                    <i class="fa-brands fa-react"></i>
-                    <h2>React</h2>
-                    <p>Building dynamic, component-driven UIs with hooks, state management, and modern React patterns.
-                    </p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript / TypeScript</h2>
+                    <p>Full-stack JS/TS — Node.js APIs, async patterns, Redux, GraphQL, and type-safe application
+                        architecture.</p>
                     <span class="bg-num">02</span>
                 </div>
                 <div class="skill-card fade-up">
-                    <i class="fa-brands fa-js"></i>
-                    <h2>JavaScript</h2>
-                    <p>Full-stack JS development — from vanilla DOM manipulation to Node.js APIs and async patterns.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React & Next.js</h2>
+                    <p>Component-driven UIs with hooks, server components, TailwindCSS, and scalable front-end
+                        architecture.</p>
                     <span class="bg-num">03</span>
                 </div>
                 <div class="skill-card fade-up">
-                    <i class="fa-brands fa-python"></i>
-                    <h2>Python</h2>
-                    <p>Data processing, scripting, automation, and backend development with Flask and Django.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-brands fa-swift"></i>
+                    <h2>Swift (iOS)</h2>
+                    <p>Native iOS feature engineering shipped in a production app, serving real users across multiple
+                        release cycles.</p>
                     <span class="bg-num">04</span>
                 </div>
                 <div class="skill-card fade-up">
-                    <i class="fa-solid fa-c"></i>
-                    <h2>C++</h2>
-                    <p>Systems programming, data structures & algorithms, and desktop application development.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Backend & Databases</h2>
+                    <p>RESTful API design, MongoDB, Redis, system design principles, Stripe Connect, and JWT / OAuth
+                        auth.</p>
                     <span class="bg-num">05</span>
                 </div>
                 <div class="skill-card fade-up">
-                    <i class="fa-solid fa-database"></i>
-                    <h2>SQL</h2>
-                    <p>Relational database design, complex queries, joins, and integrating databases into full-stack
-                        projects.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa-brands fa-docker"></i>
+                    <h2>DevOps, Tools & More</h2>
+                    <p>Git, Docker, CI/CD, AWS, Jest — plus Python and C# for scripting, data work, and .NET
+                        applications.</p>
                     <span class="bg-num">06</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ── PORTFOLIO ──────────────────────────────────────────── -->
+    <!-- PORTFOLIO -->
     <section id="portfolio">
         <div class="container">
             <p class="section-label fade-up">Selected Work</p>
-            <h2 class="section-title fade-up">My Projects</h2>
+            <h2 class="section-title fade-up">Projects</h2>
             <div class="portfolio-grid">
+
                 <div class="work-card featured fade-up">
+                    <img src="images/work-2.png" alt="TheMarketPlace">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">Full Stack · Live · Solo Build</span>
+                        <h3>TheMarketPlace</h3>
+                        <p>Live multi-vendor e-commerce platform engineered solo. Next.js 15, MongoDB, Stripe Connect
+                            with automated vendor payouts, role-based access control, and Payload CMS — architected for
+                            100+ concurrent vendors.</p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="work-card fade-up">
+                    <img src="images/work-1.png" alt="Roster App">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">iOS · Swift · Production</span>
+                        <h3>Roster — Captured Sun</h3>
+                        <p>Mobile workforce management app. Engineered 4+ Swift features in an agile team of 5, serving
+                            50+ field users across 3 production release cycles.</p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="work-card fade-up">
+                    <img src="images/work-3.png" alt="Cache Simulator">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">C · Systems Programming</span>
+                        <h3>Cache Simulator</h3>
+                        <p>Low-level cache simulator in C modeling hit/miss behavior, LRU/FIFO eviction policies, and
+                            multi-level memory hierarchy — demonstrating deep understanding of CPU architecture and
+                            performance.</p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="work-card fade-up">
+                    <img src="images/work-3.png" alt="CPU Scheduler">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">C · Operating Systems</span>
+                        <h3>CPU Scheduler</h3>
+                        <p>Implementation of FCFS, SJF, and Round Robin scheduling algorithms in C — simulating process
+                            queues, context switching, and computing wait/turnaround time metrics.</p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="work-card fade-up">
+                    <img src="images/work-3.png" alt="Unix Filesystem Tree">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">C · Unix · Systems</span>
+                        <h3>Unix Filesystem Tree</h3>
+                        <p>Unix-style filesystem tree in C with inode structures, directory traversal, and file path
+                            resolution — simulating core OS storage and file management concepts.</p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="work-card fade-up">
+                    <img src="images/work-3.png" alt="Travel Booking System">
+                    <div class="work-overlay">
+                        <span class="work-overlay-tag">C# · .NET · WinForms · React</span>
+                        <h3>Travel Booking System</h3>
+                        <p>Multi-service booking platform for flights, hotels & restaurants. 7+ features including
+                            undo/redo system, capacity-capped discount logic, and dietary-aware reservations — 0
+                            critical defects at submission.</p>
+                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="work-card fade-up">
                     <img src="images/work-1.png" alt="Fraternity Website">
                     <div class="work-overlay">
                         <span class="work-overlay-tag">Web Development</span>
                         <h3>Fraternity Website</h3>
-                        <p>Connects prospective members and alumni. Browse profiles, read chapter news, RSVP to events,
-                            explore history, and view awards earned by brothers.</p>
+                        <p>Full website connecting prospective members and alumni — member profiles, chapter news, event
+                            RSVPs, chapter history, and awards showcase.</p>
                         <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="work-card fade-up">
-                    <img src="images/work-2.png" alt="E-Commerce App">
-                    <div class="work-overlay">
-                        <span class="work-overlay-tag">Full Stack</span>
-                        <h3>E-Commerce App</h3>
-                        <p>Multi-tenant storefronts, digital product sales, and Stripe Connect payments for creators.
-                        </p>
-                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="work-card fade-up">
-                    <img src="images/work-3.png" alt="WinForm Booking App">
-                    <div class="work-overlay">
-                        <span class="work-overlay-tag">C# / WinForms</span>
-                        <h3>Booking App</h3>
-                        <p>Desktop app for booking flights, hotels, and restaurants using C# and WinForms.</p>
-                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="work-card fade-up">
-                    <img src="images/work-3.png" alt="Panama Papers">
-                    <div class="work-overlay">
-                        <span class="work-overlay-tag">Data / Analysis</span>
-                        <h3>Panama Papers</h3>
-                        <p>Data exploration and visualization on the Panama Papers dataset.</p>
-                        <a href="#" class="work-overlay-link">View project <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- ── CONTACT ────────────────────────────────────────────── -->
+    <!-- CONTACT -->
     <section id="contact">
         <div class="container">
             <p class="section-label fade-up">Let's Talk</p>
@@ -241,23 +340,27 @@
             <div class="contact-grid">
                 <div class="contact-info fade-up">
                     <h3>Get in touch</h3>
-                    <a class="contact-item" href="mailto:Blakcieduenas@gmail.com">
-                        <i class="fa-solid fa-envelope"></i> Blakcieduenas@gmail.com
+                    <a class="contact-item" href="mailto:lunaDuena@outlook.com">
+                        <i class="fa-solid fa-envelope"></i> lunaDuena@outlook.com
                     </a>
-                    <a class="contact-item" href="tel:5094236241">
-                        <i class="fa-solid fa-phone"></i> 509-423-6241
+                    <a class="contact-item" href="tel:5094236410">
+                        <i class="fa-solid fa-phone"></i> (509) 423-6410
+                    </a>
+                    <a class="contact-item" href="https://www.linkedin.com/in/IvanDuenas" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i> linkedin.com/in/IvanDuenas
                     </a>
                     <div class="socials">
                         <a href="https://github.com/IvanD1061" class="social-link" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/IvanDuenas" class="social-link" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#" class="social-link"><i class="fa-brands fa-discord"></i></a>
                     </div>
                     <br><br>
-                    <a href="images/Ivan Duenas Resume.pdf" download class="btn-primary"
+                    <a href="images/Ivan_Duenas_CSV.pdf" download class="btn-primary"
                         style="display:inline-block;font-family:var(--font-mono);font-size:13px;padding:14px 32px;border-radius:4px;text-decoration:none;letter-spacing:.05em;">Download
-                        CV</a>
+                        Resume</a>
                 </div>
                 <div class="contact-form fade-up">
                     <form name="submit-to-google-sheet">
@@ -280,33 +383,29 @@
         </div>
     </section>
 
-    <!-- ── FOOTER ─────────────────────────────────────────────── -->
+    <!-- FOOTER -->
     <footer>
-        <p>© 2025 <a href="#">Ivan Duenas</a>. All rights reserved.</p>
+        <p>© 2026 <a href="#">Ivan Duenas</a>. All rights reserved.</p>
         <p style="font-size:12px;color:var(--muted);">Built with HTML · CSS · JavaScript</p>
     </footer>
 
-    <!-- ── SCRIPTS ────────────────────────────────────────────── -->
+    <!-- SCRIPTS -->
     <script>
-        // Cursor glow
         const glow = document.getElementById('cursorGlow');
         document.addEventListener('mousemove', e => {
             glow.style.left = e.clientX + 'px';
             glow.style.top = e.clientY + 'px';
         });
 
-        // Nav hamburger
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
         hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
         navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-        // Nav shrink on scroll
         window.addEventListener('scroll', () => {
             document.getElementById('navbar').style.padding = window.scrollY > 60 ? '12px 40px' : '20px 40px';
         });
 
-        // Tabs
         document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
@@ -316,13 +415,11 @@
             });
         });
 
-        // Fade-up on scroll
         const observer = new IntersectionObserver(entries => {
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
         }, { threshold: 0.12 });
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-        // Contact form
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwAbGOJPTvE789ZD6i4C6UEPM_LYmi54-63mqGGBOh0hlZ1bVeQA7kn3b7ehSnQP0C-/exec';
         const form = document.forms['submit-to-google-sheet'];
         const msg = document.getElementById('msg');
